@@ -10,3 +10,13 @@ For a reference of the SPI protocol, see the `SPISlave_Master` example in the `S
 
 The status register contains the robot id,
 and the first 3 data transfers set the wifi ssid/password/mqtt server.
+
+## Hookup guide
+
+     GPIO    NodeMCU   Name  | STM32F0
+    ===================================
+      15       D8       SS   |   PA4
+      13       D7      MOSI  |   PA7
+      12       D6      MISO  |   PA6
+      14       D5      SCK   |   PA5
+      5        D1      RDY   |   PC4
